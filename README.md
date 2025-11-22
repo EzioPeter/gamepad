@@ -7,7 +7,7 @@
 ## 1 代码下载与编译
 将代码仓库克隆到开发主机上，并进行编译：
 ```bash
-git clone --recurse-submodules https://github.com/DeepRoboticsLab/gamepad.git
+git clone --recurse-submodules https://github.com/EzioPeter/Lite3_rl_deploy.git
 mkdir build && cd build
 cmake .. -DBUILD_EXAMPLE=ON
 make -j4
@@ -30,7 +30,7 @@ int main(int argc, char* argv[]) {
 
    <img src="./doc/app_icon.png" alt="a" style="zoom:60%;" />
 
-- 手柄连接上开发主机的网络，然后打开app，点击左上角按钮，配置需要连接的开发主机的ip地址和程序接收手柄数据的端口号,图中以Lite3官方遥控手柄Retroid为例。
+- 手柄连接上开发主机的网络，然后打开app，点击左上角按钮，配置需要连接的开发主机的ip地址和程序接收手柄数据的端口号,图中以Lite3官方遥控手柄Retroid为例。图上虽然是192.168.1.120:12121，但是实际使用的时候，大概率是wifi连接狗，所以应该修改为192.168.2.1:12121。
    <p align="center"><img src="./doc/app_retroid.png" alt="a" style="transform: rotate(270deg)zoom:35%" /></p>
    <p align="center">app显示界面</p>
 
